@@ -58,14 +58,14 @@ function HSLToHex(hsl) {
 }
 
 // 마우스를 누르는 순간 발동. 랜덤으로 선을 이어 그린다. 마우스를 뗀다면 콜백을 멈춘다.
-canvas.addEventListener("click", (e) => {
+canvas.addEventListener("pointerdown", (e) => {
   e.preventDefault();
   let rect = canvas.getBoundingClientRect();
   let startX = e.pageX - rect.left;
   let startY = e.pageY - rect.top;
   let myLine = new Line(startX, startY, parseInt(size.value), 1);
   let drawing = setInterval(() => RandomDraw(myLine), 10);
-  canvas.addEventListener("mouseup", () => {
+  canvas.addEventListener("pointerup", () => {
     clearInterval(drawing);
   });
 });
