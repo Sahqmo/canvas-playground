@@ -58,7 +58,7 @@ function HSLToHex(hsl) {
 }
 
 // 마우스를 누르는 순간 발동. 랜덤으로 선을 이어 그린다. 마우스를 뗀다면 콜백을 멈춘다.
-canvas.addEventListener("mousedown", (e) => {
+canvas.addEventListener("click", (e) => {
   e.preventDefault();
   let rect = canvas.getBoundingClientRect();
   let startX = e.pageX - rect.left;
