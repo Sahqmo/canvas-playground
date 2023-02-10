@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #13161f;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: #13161f;
+  border: 1px solid rgb(71, 77, 85);
+  border-radius: 10px;
+  display: block;
+}
+
+#controller {
+  padding: 20px;
+}
+
+#size {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(71, 77, 85);
+  background-color: #13161f;
+  color: white;
+  text-align: center;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(71, 77, 85);
+  background-color: #13161f;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #343946;
+  transition: 0.2s ease;
+}
+
+span {
+  color: white;
+  padding: 0 30px;
+}
+
+#container a {
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.2s ease;
+}
+#container a:hover {
+  background-color: #13161f;
+  color: white;
+  transition: 0.2s ease;
+}
